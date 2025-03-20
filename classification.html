@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>Классификация текста</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="header__help-btn" type="button">Руководство</button>
+                <div class="header__middle">
+                    <h1 class="header__title">Классификация текста</h1>
+                    <img class="header__img" src="img/icon.png" width="40" height="40" alt="Иконка">
+                </div>
+                <div class="header__sounds">
+                    <button class="header__music-btn">
+                        <img class="header__music-img" src="img/music-on.png" width="40" height="40" alt="Музыка включена">
+                    </button>
+                    <button class="header__sound-btn">
+                        <img class="header__sound-img" src="img/sound-on.png" width="40" height="40" alt="Звук включен">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <p class="hero__text">Введите текст для определения его категории.</p>
+                    <form class="hero__form" id="text-classification-form">
+                        <div class="custom-textarea">
+                            <label class="custom-textarea__label" for="user-input">Введите текст:</label>
+                            <textarea class="custom-textarea__field" id="user-input" name="user-input"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Классифицировать</button>
+                    </form>
+                    <h2 class="hero__title">Результат:</h2>
+                    <p class="hero__result" id="result">Категория будет отображена здесь.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a class="footer__link" href="https://github.com/dimarik1117/TextClassification" target="_blank">GitHub</a>
+                <span class="footer__year">&copy; 2025 Классификация текста.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
