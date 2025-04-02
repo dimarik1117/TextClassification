@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Luckiest+Guy&family=Rubik:ital,wght@0,300..900;1,300..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" href="img/icon.png">
     <title>Классификация текста</title>
 </head>
@@ -14,14 +19,14 @@
                 <button class="header__help-btn" type="button">Руководство</button>
                 <div class="header__middle">
                     <h1 class="header__title">Классификация текста</h1>
-                    <img class="header__img" src="img/icon.png" width="40" height="40" alt="Иконка">
+                    <img class="header__img" src="img/icon-white.png" width="40" height="40" alt="Иконка">
                 </div>
                 <div class="header__sounds">
                     <button class="header__music-btn">
-                        <img class="header__music-img" src="img/music-on.png" width="40" height="40" alt="Музыка включена">
+                        <img class="header__music-img" src="img/music-off.png" width="40" height="40" alt="Музыка включена">
                     </button>
                     <button class="header__sound-btn">
-                        <img class="header__sound-img" src="img/sound-on.png" width="40" height="40" alt="Звук включен">
+                        <img class="header__sound-img" src="img/sound-off.png" width="40" height="40" alt="Звук включен">
                     </button>
                 </div>
             </div>
@@ -32,10 +37,9 @@
         <div class="hero">
             <div class="container">
                 <div class="hero__wrapper">
-                    <p class="hero__text">Введите текст для определения его категории.</p>
-                    <form class="hero__form" id="text-classification-form">
+                    <form class="hero__form" id="text-classification-form" action="#">
                         <div class="custom-textarea">
-                            <label class="custom-textarea__label" for="user-input">Введите текст:</label>
+                            <label class="custom-textarea__label" for="user-input">Введите текст для определения его категории</label>
                             <textarea class="custom-textarea__field" id="user-input" name="user-input"></textarea>
                         </div>
                         <button class="btn" type="submit">Классифицировать</button>
