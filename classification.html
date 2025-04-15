@@ -11,6 +11,7 @@
 
     <link rel="icon" type="image/png" href="img/icon.png">
     <title>Классификация текста</title>
+    <script src="./js/index.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -23,13 +24,27 @@
                 </div>
                 <div class="header__sounds">
                     <button class="header__music-btn">
-                        <img class="header__music-img" src="img/music-off.png" width="40" height="40" alt="Музыка включена">
+                        <img class="header__music-img" src="img/music-off.png" width="40" height="40" alt="Музыка выключена">
                     </button>
                     <button class="header__sound-btn">
-                        <img class="header__sound-img" src="img/sound-off.png" width="40" height="40" alt="Звук включен">
+                        <img class="header__sound-img" src="img/sound-off.png" width="40" height="40" alt="Звук выключен">
                     </button>
                 </div>
             </div>
+            <div class="help-block">
+				<p class="help-block__paragraph">
+					1. Напечатайте или вставьте любой текст в&nbsp;поле ввода.
+				</p>
+				<p class="help-block__paragraph">
+					2. Нажмите кнопку &laquo;классифицировать&raquo;, чтобы узнать к&nbsp;какой категории относится ваш текст.
+				</p>
+				<p class="help-block__paragraph">
+					3. После вывода результата ответьте на&nbsp;вопрос, верно&nbsp;ли модель определила категорию текста, нажав на&nbsp;одну из&nbsp;кнопок &laquo;да/нет&raquo;.
+				</p>
+                <p class="help-block__paragraph">
+					4. Нажмите кнопку &laquo;заново&raquo;, чтобы обновить систему и&nbsp;ввести новый текст.
+				</p>
+		    </div>
         </div>
     </header>
 
@@ -42,10 +57,23 @@
                             <label class="custom-textarea__label" for="user-input">Введите текст для определения его категории</label>
                             <textarea class="custom-textarea__field" id="user-input" name="user-input"></textarea>
                         </div>
-                        <button class="btn" type="submit">Классифицировать</button>
+                        <button class="btn" id="btn-class" type="button">Классифицировать</button>
                     </form>
                     <h2 class="hero__title">Результат:</h2>
                     <p class="hero__result" id="result">Категория будет отображена здесь.</p>
+                    <form class="result" id="result-form" action="#">
+                        <div class="result__top">
+                            <p class="result__text">Верно ли определена категория?</p>
+                            <div class="result__buttons">
+                                <button class="btn btn--yes" id="btn-yes" type="button">Да</button>
+                                <button class="btn btn--no" id="btn-no" type="button">Нет</button>
+                            </div>
+                        </div>
+                        <div class="result__bottom">
+                            <p class="result__gratitude">Спасибо за ответ!</p>
+                            <button class="btn" id="btn-restart" type="button">Заново</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
