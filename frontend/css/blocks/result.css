@@ -1,0 +1,28 @@
+.result,
+.result__top,
+.result__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.result__text,
+.result__gratitude {
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+}
+
+.result__buttons {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-around;
+}
+
+.result__top,
+.result__bottom {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}

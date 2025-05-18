@@ -1,0 +1,24 @@
+.probability-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.probability-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+.probability-item {
+    margin-bottom: 10px;
+}
+
+.probability-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}

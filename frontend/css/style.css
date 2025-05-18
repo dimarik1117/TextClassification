@@ -1,0 +1,14 @@
+/* Global */
+@import "global/container.css";
+@import "global/reboot.css";
+
+/* Blocks */
+@import "blocks/btn.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/footer.css";
+@import "blocks/header.css";
+@import "blocks/hero.css";
+@import "blocks/help-block.css";
+@import "blocks/hidden.css";
+@import "blocks/probability.css";
+/* @import "blocks/result.css"; */

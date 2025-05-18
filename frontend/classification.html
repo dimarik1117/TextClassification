@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Luckiest+Guy&family=Rubik:ital,wght@0,300..900;1,300..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>Классификация текста</title>
+    <script src="./js/index.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="header__help-btn" type="button">Руководство</button>
+                <div class="header__middle">
+                    <h1 class="header__title">Классификация текста</h1>
+                    <img class="header__img" src="img/icon-white.png" width="40" height="40" alt="Иконка">
+                </div>
+                <div class="header__sounds">
+                    <button class="header__music-btn">
+                        <img class="header__music-img" src="img/music-off.png" width="40" height="40" alt="Музыка выключена">
+                    </button>
+                    <button class="header__sound-btn">
+                        <img class="header__sound-img" src="img/sound-off.png" width="40" height="40" alt="Звук выключен">
+                    </button>
+                </div>
+            </div>
+            <div class="help-block">
+				<p class="help-block__paragraph">
+					1. Напечатайте или вставьте любой текст в&nbsp;поле ввода.
+				</p>
+				<p class="help-block__paragraph">
+					2. Нажмите кнопку &laquo;классифицировать&raquo;, чтобы узнать к&nbsp;какой категории относится ваш текст.
+				</p>
+				<p class="help-block__paragraph">
+					3. После вывода результата можете увидеть полученную категорию и&nbsp;вероятность её&nbsp;совпадения.
+				</p>
+		    </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__form">
+                        <div class="custom-textarea">
+                            <label class="custom-textarea__label" for="text-input">Введите текст для определения его категории</label>
+                            <textarea class="custom-textarea__field" id="text-input" name="text-input"></textarea>
+                        </div>
+                        <button class="btn" id="predict-btn">Классифицировать</button>
+                    </div>
+
+                    <div class="hero__loading hidden" id="loading">
+                        <div class="hero__loader"></div>
+                        <p class="hero__loading-text">Анализируем текст...</p>
+                    </div>
+
+                    <div class="hero__result" id="result">
+                        <h2 class="hero__result-title">Результат:</h2>
+                        <p class="hero__result-text">Категория: <span class="hero__result-text" id="category"></span></p>
+                        <div class="hero__result-text" id="probabilities"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a class="footer__link" href="https://github.com/dimarik1117/TextClassification" target="_blank">GitHub</a>
+                <span class="footer__year">&copy; 2025 Классификация текста.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
